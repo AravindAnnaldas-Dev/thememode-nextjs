@@ -1,3 +1,4 @@
+import Provider from "@/context/Provider";
 import "./globals.css";
 
 export default function RootLayout({
@@ -7,7 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }

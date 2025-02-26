@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-clr: #ffffff;
+  --text-clr: #212121;
+  --border-clr: #424242;
+}
+
+.dark:root {
+  --bg-clr: #212121;
+  --text-clr: #58dae0;
+  --border-clr: #919191;
+}
+
+body {
+  height: 100svh;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  overflow-y: auto;
+}
